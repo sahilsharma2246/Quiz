@@ -70,10 +70,10 @@ function checkAnswer(selected, idx) {
     buttons.forEach(btn => {
         btn.disabled = true;
         if (btn.textContent === q.answer) {
-            btn.style.backgroundColor = '#28a745'; // correct
+            btn.style.backgroundColor = '#28a745'; 
         }
         if (btn.textContent === selected && selected !== q.answer) {
-            btn.style.backgroundColor = '#dc3545'; // wrong
+            btn.style.backgroundColor = '#dc3545'; 
         }
     });
     if (selected === q.answer) {
